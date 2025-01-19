@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: loksai-eta-container
-        image: loksaieta/sa-mywebapp:latest
+        image: prmd777/sa-mywebapp:latest
         ports:
         - containerPort: 8080
 ---
