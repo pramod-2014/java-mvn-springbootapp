@@ -2,15 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>www.loksaieta.com</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudSphere - Scalable Cloud Solutions</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="jumbotron" style="background-color:white">
-      <img src="https://octodex.github.com/images/spidertocat.png" alt="Spidertocat"
-           class="img-responsive center-block" style="width:250px"/>
-      <h2 class="text-center">Hello Team</h2>
-      <p class="text-center">Spring Boot Web Application - CICD - SA DevOps - PollSCM- Demo!!!!!! ! </p>
-  </div>
+    <header>
+        <div class="logo">
+            <h1>CloudSphere</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Empower Your Business with CloudSphere</h2>
+            <p>Reliable and scalable cloud solutions tailored to your needs</p>
+            <a href="#services" class="cta-button">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <h3>Cloud Migration</h3>
+                <p>Seamlessly move your business to the cloud with minimal downtime.</p>
+            </div>
+            <div class="service">
+                <h3>Data Analytics</h3>
+                <p>Unlock insights from your data using our advanced analytics tools.</p>
+            </div>
+            <div class="service">
+                <h3>DevOps Solutions</h3>
+                <p>Optimize your workflows with our DevOps automation services.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions">
+        <h2>Customized Solutions</h2>
+        <p>Our tailored cloud solutions cater to businesses of all sizes, helping you achieve scalability, security, and efficiency.</p>
+        <ul>
+            <li>Infrastructure as a Service (IaaS)</li>
+            <li>Platform as a Service (PaaS)</li>
+            <li>Software as a Service (SaaS)</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At CloudSphere, we are dedicated to delivering cutting-edge cloud technology to empower your business. Our team of experts ensures that you receive the best solutions for your unique needs.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit-contact" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CloudSphere. All rights reserved.</p>
+    </footer>
 </body>
 </html>
