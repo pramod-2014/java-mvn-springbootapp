@@ -1,36 +1,36 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: prmd77-deploy
+  name: loksai-eta-deploy
   labels:
-    app: prmd77-deploy-lbl
+    app: loksai-eta-deploy-lbl
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: prmd77-app
+      app: loksai-eta-app
   template:
     metadata:
       labels:
-        app: prmd77-app
+        app: loksai-eta-app
     spec:
       containers:
-      - name: prmd77-container
-        image: prmd77/mynewebapp:latest
+      - name: loksai-eta-container
+        image: prmd77/sa-mywebapp:latest
         ports:
         - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: prmd77-np-service
+  name: loksai-eta-np-service
   labels:
-    app: prmd77-np-app
+    app: loksai-eta-np-app
 spec:
   selector:
-    app: prmd77-deploy-lbl
+    app: loksai-eta-deploy-lbl
 
-type: NodePort
+  type: NodePort
   ports:
   - nodePort: 31028
     port: 8080
