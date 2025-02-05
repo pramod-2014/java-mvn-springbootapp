@@ -30,6 +30,8 @@ spec:
   selector:
     app: prmd77-deploy-lbl
 
-  type: NodePort
+type: NodePort
   ports:
   - nodePort: 31028
+    port: 8080
+    targetPort: 8080
