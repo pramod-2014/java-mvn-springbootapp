@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: prmd77-container
-        image: prmd77/mynewapp:v1.0
+        image: prmd77/mynewebapp:latest
         ports:
         - containerPort: 8080
 ---
